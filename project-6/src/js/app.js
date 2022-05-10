@@ -1,4 +1,5 @@
-App = {
+
+const App = {
     web3Provider: null,
     contracts: {},
     emptyAddress: "0x0000000000000000000000000000000000000000",
@@ -98,6 +99,7 @@ App = {
     },
 
     initSupplyChain: function () {
+        web3.eth.defaultAccount = web3.eth.accounts[0];
         /// Source the truffle compiled smart contracts
         var jsonSupplyChain='../../build/contracts/SupplyChain.json';
         
@@ -118,6 +120,7 @@ App = {
     },
 
     bindEvents: function() {
+        console.log('button clicked');
         $(document).on('click', App.handleButtonClick);
     },
 
@@ -132,34 +135,24 @@ App = {
         switch(processId) {
             case 1:
                 return await App.harvestItem(event);
-                break;
             case 2:
                 return await App.processItem(event);
-                break;
             case 3:
                 return await App.packItem(event);
-                break;
             case 4:
                 return await App.sellItem(event);
-                break;
             case 5:
                 return await App.buyItem(event);
-                break;
             case 6:
                 return await App.shipItem(event);
-                break;
             case 7:
                 return await App.receiveItem(event);
-                break;
             case 8:
                 return await App.purchaseItem(event);
-                break;
             case 9:
                 return await App.fetchItemBufferOne(event);
-                break;
             case 10:
                 return await App.fetchItemBufferTwo(event);
-                break;
             }
     },
 
