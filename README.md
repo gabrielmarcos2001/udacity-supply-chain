@@ -1,3 +1,24 @@
+# Rubic write-up
+
+Activity:
+![activity](images/udacity-activity-diagram.png)
+
+Sequence:
+![sequence](images/udacity-sequence-diagram.png)
+
+State:
+![state](images/udacity-state-diagram.png)
+
+Data Model:
+![model](images/udacity-model-diagram.png)
+
+* SupplyChain Contract Address: 0x0B6950e03aCe007B8E63C4a9d9CF3f0EdC4D578D
+* ConsumerRole Contract Address: 0xD8Ab9b9b917DE937b18900eb6C457061cC3F5c30
+* RetailerRole Contract Address: 0x264Dc1137F47f8C9095722Cd36B0CEf5e6D2D949
+* DistributorRole Contract Address:  0x8A99F1eF4f0CA9B07D5dC6237bF09B1EA1bbD634
+* FarmerRole Contract Address: 0xe10155A4C9B46b223A8b9a1b03C9BA8689006A20
+
+
 # Supply chain & data auditing
 
 This repository containts an Ethereum DApp that demonstrates a Supply Chain flow between a Seller and Buyer. The user story is similar to any commonly used supply chain process. A Seller can add items to the inventory system stored in the blockchain. A Buyer can purchase such items from the inventory system. Additionally a Seller can mark an item as Shipped, and similarly a Buyer can mark an item as Received.
